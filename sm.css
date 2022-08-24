@@ -1,53 +1,33 @@
 body {
   background-image: url("images/fifties-lesslong.png");
   background-size: cover;
-  /* background-repeat: round; */
   width: 100vw;
   margin: 0;
   padding: 0;
 }
 
+.top-box {
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  transform: rotate(0deg);
+
+  /* border: .2px solid deeppink; */
+}
+
 .top-img.sm {
   color: #9f3f;
-  text-align: center;
-  font-size: 1.2em;
   padding: 1em;
-  /* min-width: 40vw; */
-  /* max-width: 100%; */
-  width: 100%;
-  border: solid deeppink;
+  width: 80vw;
+  height: calc(80vw * .1698);
 
-
-
-
-
+  /* border: solid deeppink; */
 }
-/* .bg-sm {
-  display: none;
-  z-index: -1;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  padding: 0;
-  margin: 0 auto;
-  transform: rotate(90deg);
-}
-.bg-med {
-  display: none;
-  z-index: -1;
-  position: fixed;
-  width: 660vw;
-  height: 100vh;
-  padding: 0;
-  margin: 0 auto;
-}
-.bg-lg {
-  display: none;
-  z-index: -1;
-  position: fixed;
-  width: 660vw;
-  height: 100vh;
-  padding: 0;
-  margin: 0 auto;
-} */
+
+
+
 

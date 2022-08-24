@@ -26,7 +26,7 @@ const movies = {
     },
 
     images: {
-      title: "images/cube/cube-name.jpg",
+      title: "images/cube/title.jpg",
       allyMatthew: "images/wargames/wargames-ally_matthew.jfif",
       broderick: "images/wargames/broderick.jpg",
       falken: "images/wargames/Stephen_Falken.webp",
@@ -46,6 +46,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const topImg = document.querySelector(".top-img");
   topImg.src = movies.wargames.images.title;
   initVars();
+  findCurrentCssRequirements();
 })
 
 let currentCss;
@@ -96,13 +97,8 @@ const initVars = () => {
 
 const topImg = document.querySelector(".top-img");
 
-
-
-/*
-  WINDOW RESIZE ()
-*/
-const windowResize = () => {
-
+const findCurrentCssRequirements = () => {
+  
   const sm = mediaBreaks.find(item => item.href === 'sm.css').media;
   console.log(`sm = ${sm}`)
   const med = mediaBreaks.find(item => item.href === 'med.css').media;
@@ -138,34 +134,13 @@ const windowResize = () => {
     topImg.classList.remove("sm", "med");
     topImg.classList.add("lg");
   }
+}
 
-
-  console.log(`currentCss = ${currentCss}`)
-  // pull the name of the active stylesheet and set class accordingly
-  // NOTE: this approach might become tedious if the class names are ever changed
-  // switch (currentCss) {
-  //   case 'sm.css':
-  //     console.log('sm')
-  //     topImg.src = movies.wargames.images.title;
-  //     topImg.classList.remove("med", "lg");
-  //     topImg.classList.add("sm");
-  //     break;
-  //   case 'med.css':
-  //     console.log('med')
-  //     topImg.src = movies.cube.images.title;
-  //     topImg.classList.remove("sm", "lg");
-  //     topImg.classList.add("med");
-  //     break;
-  //   case 'lg.css':
-  //     console.log('lg')
-  //     topImg.src = movies.wargames.images.title;
-  //     topImg.classList.remove("sm", "med");
-  //     topImg.classList.add("lg");
-  //     break;
-  //   default:
-  //     break;
-
-  // }
+/*
+  WINDOW RESIZE ()
+*/
+const windowResize = () => {
+  findCurrentCssRequirements();
 }
 
 

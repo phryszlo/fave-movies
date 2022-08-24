@@ -3,10 +3,31 @@ body {
   background-image: url("images/feet-up-cube-full-height.png");
   background-size: cover;
   width: 100vw;
-  height: 100vh;
-  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
+}
+
+.top-box {
+  width: 40%;
+  height: 1em;
+  /* height: fit-content; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  transform: rotate(-4deg);
+
+  /* border: .2px solid deeppink; */
+}
+
+.top-img.med {
+  color: #9f3f;
+  padding: 1em;
+  width: 80vw;
+  height: calc(80vw * .233);
+  
+  border: solid deeppink;
 }
 
 .background {
@@ -54,21 +75,4 @@ body {
   padding: 1em;
   margin: 0;
   /* border: .2px solid #9f3f; */
-}
-
-.top-box {
-  width: 60%;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 0 auto;
-  padding: 1.4em 0 0 0;;
-  transform: rotate(-2deg);
-
-  /* border: .2px solid deeppink; */
-}
-.top-img {
-  margin: 0;
-  height: 5em;;
 }
