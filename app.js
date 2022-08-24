@@ -102,7 +102,7 @@ const topImg = document.querySelector(".top-img");
   WINDOW RESIZE ()
 */
 const windowResize = () => {
-  
+
   const sm = mediaBreaks.find(item => item.href === 'sm.css').media;
   console.log(`sm = ${sm}`)
   const med = mediaBreaks.find(item => item.href === 'med.css').media;
@@ -119,39 +119,53 @@ const windowResize = () => {
 
   if (vw < sm) {
     currentCss = sm;
+    console.log('sm')
+    topImg.src = movies.wargames.images.title;
+    topImg.classList.remove("med", "lg");
+    topImg.classList.add("sm");
   }
   else if (vw < med) {
     currentCss = med;
+    console.log('med')
+    topImg.src = movies.cube.images.title;
+    topImg.classList.remove("sm", "lg");
+    topImg.classList.add("med");
   }
   else {
     currentCss = lg;
+    console.log('lg')
+    topImg.src = movies.wargames.images.title;
+    topImg.classList.remove("sm", "med");
+    topImg.classList.add("lg");
   }
 
 
   console.log(`currentCss = ${currentCss}`)
   // pull the name of the active stylesheet and set class accordingly
   // NOTE: this approach might become tedious if the class names are ever changed
-  switch (currentCss) {
-    case 'sm.css':
-      console.log('sm')
+  // switch (currentCss) {
+  //   case 'sm.css':
+  //     console.log('sm')
+  //     topImg.src = movies.wargames.images.title;
+  //     topImg.classList.remove("med", "lg");
+  //     topImg.classList.add("sm");
+  //     break;
+  //   case 'med.css':
+  //     console.log('med')
+  //     topImg.src = movies.cube.images.title;
+  //     topImg.classList.remove("sm", "lg");
+  //     topImg.classList.add("med");
+  //     break;
+  //   case 'lg.css':
+  //     console.log('lg')
+  //     topImg.src = movies.wargames.images.title;
+  //     topImg.classList.remove("sm", "med");
+  //     topImg.classList.add("lg");
+  //     break;
+  //   default:
+  //     break;
 
-      topImg.classList.remove("med", "lg");
-      topImg.classList.add("sm");
-      break;
-    case 'med.css':
-      console.log('med')
-      topImg.classList.remove("sm", "lg");
-      topImg.classList.add("med");
-      break;
-    case 'lg.css':
-      console.log('lg')
-      topImg.classList.remove("sm", "med");
-      topImg.classList.add("lg");
-      break;
-    default:
-      break;
-
-  }
+  // }
 }
 
 
