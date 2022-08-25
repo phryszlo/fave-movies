@@ -156,8 +156,17 @@ const findCurrentCssRequirements = () => {
     console.log(`lg... ${topBox}`)
 
     topImg.src = movies.darkcrystal.images.title;
+    
+
+    topP.innerHTML = `"${movies.darkcrystal.quotes.helpfulComment}"`;
+
+    bottomImg1.src = movies.darkcrystal.images.mystic;
+    bottomImg2.src = movies.darkcrystal.images.skeksis;
+    bottomImg3.src = "";
     topBox.classList.remove("sm", "med");
     topBox.classList.add("lg");
+    bottomBox.classList.remove("sm", "med");
+    bottomBox.classList.add("lg");
   }
 }
 
