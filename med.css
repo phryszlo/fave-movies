@@ -29,16 +29,24 @@ body {
 
 .popup {
   display: none;
-
   height: 80px;
   width: 80px;
-  border: solid red;
+  /* border: solid red; */
 }
 .top-box.med .popup {
   display: none;
+  position: absolute;
+  top: 150px;
+  width: 400px;
+  height: fit-content;
+  font-size: .8em;
+  background-color: #223b;
+  padding: 1em;
+  color: #ffaf;
+  transform: rotate(4deg);
 }
 
-.top-box.med:hover .popup {
+.hoverable:hover .popup {
   display: block;
 }
 

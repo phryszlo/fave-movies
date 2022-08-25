@@ -99,6 +99,8 @@ const initVars = () => {
 
 }
 
+
+// =========== ELEMENT DEFINITIONS ================
 const topImg = document.querySelector(".top-img");
 const topBox = document.querySelector(".top-box");
 const topP = document.querySelector(".helpful");
@@ -107,6 +109,8 @@ const bottomBox = document.querySelector(".bottom-box");
 const bottomImg1 = document.querySelector(".bottom-img1");
 const bottomImg2 = document.querySelector(".bottom-img2");
 const bottomImg3 = document.querySelector(".bottom-img3");
+
+const popup = document.querySelector(".popup");
 
 
 const findCurrentCssRequirements = () => {
@@ -125,6 +129,7 @@ const findCurrentCssRequirements = () => {
 
   // i'm not sure if vw is (as got ^^^) is what the @media query compares, but it seems probable
 
+  // ============ SMALL ===================
   if (vw < sm) {
     console.log(`sm... ${topBox}`)
     topImg.src = movies.wargames.images.title;
@@ -137,13 +142,17 @@ const findCurrentCssRequirements = () => {
     topBox.classList.add("sm");
     bottomBox.classList.remove("med", "lg");
     bottomBox.classList.add("sm");
+
+    popup.innerHTML = movies.wargames.quotes.synopsis;
   }
+  
+  // ============ MEDIUM ===================
   else if (vw < med) {
     console.log(`med... ${topBox}`)
-
+    
     topImg.src = movies.cube.images.title;
     topP.innerHTML = `"${movies.cube.quotes.helpfulComment}"`;
-
+    
     bottomImg1.src = movies.cube.images.kazan;
     bottomImg2.src = movies.cube.images.what;
     bottomImg3.src = "";
@@ -151,15 +160,18 @@ const findCurrentCssRequirements = () => {
     topBox.classList.add("med");
     bottomBox.classList.remove("sm", "lg");
     bottomBox.classList.add("med");
+    popup.innerHTML = movies.cube.quotes.synopsis;
   }
+  
+  // ============ LARGE ===================
   else if (vw < lg){
     console.log(`lg... ${topBox}`)
 
     topImg.src = movies.darkcrystal.images.title;
     
-
+    
     topP.innerHTML = `"${movies.darkcrystal.quotes.helpfulComment}"`;
-
+    
     bottomImg1.src = movies.darkcrystal.images.mystic;
     bottomImg2.src = movies.darkcrystal.images.skeksis;
     bottomImg3.src = "";
@@ -167,6 +179,7 @@ const findCurrentCssRequirements = () => {
     topBox.classList.add("lg");
     bottomBox.classList.remove("sm", "med");
     bottomBox.classList.add("lg");
+    popup.innerHTML = movies.darkcrystal.quotes.synopsis;
   }
 }
 
