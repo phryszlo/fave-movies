@@ -18,7 +18,7 @@ body {
   margin: 0 auto;
   padding: 0;
 
-  /* border: .2px solid yellowgreen; */
+  /* border: 2px solid yellowgreen; */
 }
 
 .top-box.sm .top-img {
@@ -53,19 +53,19 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: solid salmon;
+  /* border: solid salmon; */
 }
 .bottom-box.sm .bottom-img2 {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: solid salmon;
+  /* border: solid salmon; */
 }
 .bottom-box.sm .bottom-img3 {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: solid salmon;
+  /* border: solid salmon; */
 }
 
 

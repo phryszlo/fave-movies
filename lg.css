@@ -8,35 +8,46 @@ body {
 }
 
 .top-box.lg {
-  width: 20vw;
+  position: relative;
+  left: 300px;
+  top: 60px;
+  width: 50vw;
   height: calc(20vw * .8723);
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: flex-end;
   text-align: center;
-  margin: 0 auto;
   padding: 0;
 
-  border: .2px solid deeppink;
+  /* border: .2px solid deeppink; */
 }
 
 .top-box.lg .top-img {
-  width: 80%;
-  border: solid blue;
+  position: relative;
+  left: -80px;
+  width: 20vw;
+  /* border: solid blue; */
 }
 
 .top-box.lg .helpful {
-  width: 80px;
+  width: 180px;
+  height: 100px;
   margin: 0;
   color: #9ff;
-  font-size: .7em;
+  font-size: .9em;
   font-style: italic;
+  text-align: right;
+  padding: 0 1em;
   min-height: 2em;
-  border: solid 4px peru;
+  /* border: solid 4px peru; */
 }
 
 .bottom-box.lg {
   position: absolute;
-  bottom: 70vh;
+  /* bottom: 70vh; */
+  top: 40px;
+  left: -5vw;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -47,8 +58,8 @@ body {
 }
 
 .bottom-box.lg .bottom-img1 {
-  width: 80px;
-  height: 80px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   /* border: .3px solid #9ff; */
   filter: brightness(150%);
@@ -56,8 +67,10 @@ body {
 
 }
 .bottom-box.lg .bottom-img2 {
-  width: 80px;
-  height: 80px;
+  width: 110px;
+  height: 110px;
+  position: relative;
+  left: 1.3em;
   border-radius: 50%;
   /* border: .3px solid #9ff; */
   filter: brightness(180%);
