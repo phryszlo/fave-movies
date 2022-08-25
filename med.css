@@ -19,7 +19,7 @@ body {
   padding: 0;
   transform: rotate(-4deg);
 
-  border: .2px solid green;
+  /* border: .2px solid green; */
 }
 
 .top-box.med .top-img {
@@ -77,7 +77,7 @@ body {
   right: 9vw;
   width: 15vw;
   height: 15vw;
-  border: 2px inset #9ff;
+  border: .5px inset #9ff;
   filter: brightness(150%);
   margin: 1em;
   transform: rotate(-15deg);
@@ -89,7 +89,7 @@ body {
   left: 13vw;
   width: 18vw;
   height: 18vw;
-  border: 2px inset #9f4;
+  border: .5px inset #9f4;
   filter: brightness(180%);
   margin: 1em;
   transform: rotate(11deg);
