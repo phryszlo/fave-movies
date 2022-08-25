@@ -16,7 +16,7 @@ body {
   margin: 0 auto;
   padding: 0;
 
-  border: .2px solid yellowgreen;
+  /* border: .2px solid yellowgreen; */
 }
 
 .top-box.med, .top-box.lg {

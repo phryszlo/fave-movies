@@ -9,21 +9,21 @@ body {
 
 .top-box.med {
   display: block;
-  width: 60vw;
-  height: calc(60vw * .233);
+  width: 50vw;
+  height: calc(50vw * .233);
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 0 auto;
+  margin: 1.5em auto;
   padding: 0;
   transform: rotate(-4deg);
 
-  border: .2px solid green;
+  /* border: .2px solid green; */
 }
 
 .top-box.med .top-img {
   width: 100%;
-  border: solid white;
+  /* border: solid white; */
 }
 
 .top-box.sm, .top-box.lg {

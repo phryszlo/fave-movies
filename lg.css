@@ -8,8 +8,8 @@ body {
 
 .top-box.lg {
   display: block;
-  width: 60vw;
-  height: calc(60vw * .233);
+  width: 20vw;
+  height: calc(20vw * .8723);
   display: flex;
   justify-content: center;
   text-align: center;
@@ -21,7 +21,7 @@ body {
 
 .top-box.lg .top-img {
   width: 100%;
-  border: solid blue;
+  /* border: solid blue; */
 }
 
 .top-box.sm, .top-box.med {
