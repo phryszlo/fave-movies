@@ -128,10 +128,11 @@ const findCurrentCssRequirements = () => {
   if (vw < sm) {
     console.log(`sm... ${topBox}`)
     topImg.src = movies.wargames.images.title;
+    topP.innerHTML = `"${movies.wargames.quotes.helpfulComment}"`;
     bottomImg1.src = movies.wargames.images.broderick;
     bottomImg2.src = movies.wargames.images.falken;
     bottomImg3.src = movies.wargames.images.sheedy;
-    topP.innerHTML = `"${movies.wargames.quotes.helpfulComment}"`;
+
     topBox.classList.remove("med", "lg");
     topBox.classList.add("sm");
     bottomBox.classList.remove("med", "lg");
@@ -141,8 +142,15 @@ const findCurrentCssRequirements = () => {
     console.log(`med... ${topBox}`)
 
     topImg.src = movies.cube.images.title;
+    topP.innerHTML = `"${movies.cube.quotes.helpfulComment}"`;
+
+    bottomImg1.src = movies.cube.images.kazan;
+    bottomImg2.src = movies.cube.images.what;
+    bottomImg3.src = "";
     topBox.classList.remove("sm", "lg");
     topBox.classList.add("med");
+    bottomBox.classList.remove("sm", "lg");
+    bottomBox.classList.add("med");
   }
   else if (vw < lg){
     console.log(`lg... ${topBox}`)
