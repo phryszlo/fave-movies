@@ -101,6 +101,13 @@ const initVars = () => {
 
 const topImg = document.querySelector(".top-img");
 const topBox = document.querySelector(".top-box");
+const topP = document.querySelector(".helpful");
+
+const bottomBox = document.querySelector(".bottom-box");
+const bottomImg1 = document.querySelector(".bottom-img1");
+const bottomImg2 = document.querySelector(".bottom-img2");
+const bottomImg3 = document.querySelector(".bottom-img3");
+
 
 const findCurrentCssRequirements = () => {
   
@@ -121,8 +128,14 @@ const findCurrentCssRequirements = () => {
   if (vw < sm) {
     console.log(`sm... ${topBox}`)
     topImg.src = movies.wargames.images.title;
+    bottomImg1.src = movies.wargames.images.broderick;
+    bottomImg2.src = movies.wargames.images.falken;
+    bottomImg3.src = movies.wargames.images.sheedy;
+    topP.innerHTML = `"${movies.wargames.quotes.helpfulComment}"`;
     topBox.classList.remove("med", "lg");
     topBox.classList.add("sm");
+    bottomBox.classList.remove("med", "lg");
+    bottomBox.classList.add("sm");
   }
   else if (vw < med) {
     console.log(`med... ${topBox}`)

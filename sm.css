@@ -8,10 +8,12 @@ body {
 
 .top-box.sm {
   display: block;
-  width: 60vw;
-  height: calc(60vw * .233);
+  width: 100vw;
+  height: fit-content; /* calc(60vw * .233);*/
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   margin: 0 auto;
   padding: 0;
@@ -19,16 +21,55 @@ body {
   /* border: .2px solid yellowgreen; */
 }
 
-.top-box.med, .top-box.lg {
+/* .top-box.med, .top-box.lg {
   display: none;
-}
+} */
 
 .top-box.sm .top-img {
-  padding: 1em;
-  width: 80vw;
+  padding: .4em 0 .25em 0;
+  /* width: 60vw; */
   height: calc(80vw * .1698);
 
   /* border: solid deeppink; */
+}
+
+.top-box.sm .helpful {
+  width: 95%;
+  margin: 0;
+  color: #9ff;
+  font-size: .7em;
+  font-style: italic;
+  min-height: 2em;
+  /* border: solid 4px peru; */
+}
+
+.bottom-box.sm {
+  position: absolute;
+  bottom: 2vh;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  margin: auto;
+  /* border: solid 3px #9ff; */
+}
+
+.bottom-box.sm .bottom-img1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: solid salmon;
+}
+.bottom-box.sm .bottom-img2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: solid salmon;
+}
+.bottom-box.sm .bottom-img3 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: solid salmon;
 }
 
 
