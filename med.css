@@ -38,12 +38,10 @@ body {
 
 .bottom-box.med {
   position: absolute;
-  bottom: 70vh;
+  bottom: 50vh;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  /* justify-content: flex-end; */
-  width: 100vw;
+  justify-content: space-between;
+  width: 99vw;
   margin: auto;
   /* border: solid 3px #9ff; */
 }
@@ -54,8 +52,9 @@ body {
   border-radius: 50%;
   /* border: .3px solid #9ff; */
   filter: brightness(150%);
-  padding-right: 1em;;
-
+  padding-right: 1em;
+  margin: 1em;
+  
 }
 .bottom-box.med .bottom-img2 {
   width: 80px;
@@ -63,7 +62,5 @@ body {
   border-radius: 50%;
   /* border: .3px solid #9ff; */
   filter: brightness(180%);
-}
-.bottom-box.med .bottom-img3 {
-  display: none;
+  margin: 1em;
 }

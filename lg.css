@@ -3,13 +3,11 @@ body {
   background-image: url("images/darkcrystal/bg.webp");
   background-size: cover;
   width: 100vw;
-
   margin: 0;
   padding: 0;
 }
 
 .top-box.lg {
-  display: block;
   width: 20vw;
   height: calc(20vw * .8723);
   display: flex;
@@ -25,12 +23,6 @@ body {
   width: 80%;
   border: solid blue;
 }
-
-.top-box.sm, .top-box.lg {
-  display: none;
-}
-
-
 
 .top-box.lg .helpful {
   width: 80px;
