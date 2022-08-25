@@ -6,21 +6,24 @@ body {
   padding: 0;
 }
 
-.top-box {
-  width: 60%;
-  height: fit-content;
+.top-box.sm {
+  display: block;
+  width: 60vw;
+  height: calc(60vw * .233);
   display: flex;
   justify-content: center;
   text-align: center;
   margin: 0 auto;
   padding: 0;
-  transform: rotate(0deg);
 
-  /* border: .2px solid deeppink; */
+  border: .2px solid yellowgreen;
 }
 
-.top-img.sm {
-  color: #9f3f;
+.top-box.med, .top-box.lg {
+  display: none;
+}
+
+.top-box.sm .top-img {
   padding: 1em;
   width: 80vw;
   height: calc(80vw * .1698);

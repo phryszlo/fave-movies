@@ -1,11 +1,38 @@
 
 body {
-  background-image: url("images/feet-up-amc.jpg");
+  background-image: url("images/darkcrystal/dcbg.jpg");
   background-size: cover;
   margin: 0;
   padding: 0;
 }
 
+.top-box.lg {
+  display: block;
+  width: 60vw;
+  height: calc(60vw * .233);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+
+  /* border: .2px solid deeppink; */
+}
+
+.top-box.lg .top-img {
+  width: 100%;
+  border: solid blue;
+}
+
+.top-box.sm, .top-box.med {
+  display: none;
+}
+
+
+
+
+
+/* 
 .background {
   z-index: -1;
   position: fixed;
@@ -13,10 +40,10 @@ body {
   height: 100vh;
   padding: 0;
   margin: 0;
-}
+} */
 
 
-.bg-sm {
+/* .bg-sm {
   display: none;
   z-index: -1;
   position: fixed;
@@ -42,11 +69,5 @@ body {
   height: 100vh;
   padding: 0;
   margin: 0 auto;
-}
+} */
 
-.title {
-  color: white;
-  text-align: center;
-  font-size: 1.2em;
-  padding: 1em;
-}
