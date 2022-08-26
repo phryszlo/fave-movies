@@ -42,8 +42,8 @@ body {
   font-size: .8em;
   background-color: #223b;
   padding: 1em;
-  color: #ffaf;
-  transform: rotate(4deg);
+  color: #9ff;
+  transform: rotate(14deg);
 }
 
 .hoverable:hover .popup {

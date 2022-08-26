@@ -34,13 +34,44 @@ body {
   width: 180px;
   height: 100px;
   margin: 0;
-  color: #9ff;
+  color: #bf38f3;
+  text-shadow: 1px 1px white;
   font-size: .9em;
   font-style: italic;
   text-align: right;
   padding: 0 1em;
   min-height: 2em;
   /* border: solid 4px peru; */
+}
+
+
+.popup {
+  display: none;
+  height: 80px;
+  width: 80px;
+  /* border: solid red; */
+}
+.top-box.lg .popup {
+  display: none;
+  position: absolute;
+  top: 300px;
+  left: 210px;
+  width: 400px;
+  height: fit-content;
+  font-size: .8em;
+  background-color: #223b;
+  padding: 1em;
+  color: #ffaf;
+}
+.hoverable {
+  z-index: 100;
+  /* border: solid orange; */
+}
+.hoverable:hover {
+  /* border: 3px solid orange; */
+}
+.hoverable:hover .popup {
+  display: block;
 }
 
 .bottom-box.lg {
@@ -54,7 +85,6 @@ body {
   /* justify-content: flex-end; */
   width: 100vw;
   margin: auto;
-  /* border: solid 3px #9ff; */
 }
 
 .bottom-box.lg .bottom-img1 {

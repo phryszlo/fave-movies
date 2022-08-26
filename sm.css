@@ -39,6 +39,35 @@ body {
   /* border: solid 4px peru; */
 }
 
+
+.popup {
+  position: relative;
+  /* left: -10px; */
+  display: none;
+  height: 80px;
+  width: 80px;
+}
+.top-box.sm .popup {
+  display: none;
+  position: absolute;
+  top: 130px;
+  /* left: -1px; */
+  /* margin-right: 100px;; */
+  width: 220px;
+  margin: auto;
+  height: fit-content;
+  font-size: .8em;
+  background-color: #223b;
+  padding: 1em;
+  color: #ffaf;
+  /* border: solid red; */
+
+}
+
+.hoverable:hover .popup {
+  display: block;
+}
+
 .bottom-box.sm {
   position: absolute;
   bottom: 2vh;
